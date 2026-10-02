@@ -1,6 +1,6 @@
 # ⛩️ Using agent-skills with Dojo Workspace
 
-[Dojo Workspace](https://heydojo.ai) reads skills from the standard `.agents/skills/` folders. Installing the desktop app also puts the `dojo` command on your PATH.
+Dojo Workspace is a desktop app that reads skills from the standard `.agents/skills/` folders. Installing it also puts the `dojo` command on your PATH. If you'd rather add skills through the app's UI, [here is how](https://heydojo.ai/learn/dojo-skills-teach-your-agent-new-workflows).
 
 If `dojo` is not found, add its install folder to your PATH, or run it by its full path:
 
@@ -18,8 +18,6 @@ dojo skills add addyosmani/agent-skills
 ```
 
 Skills install into `~/.agents/skills/` and appear in the **Skills** panel under the `addyosmani-agent-skills` group. Enable the ones you want for each lane (Dojo Solo or Dojo Duo).
-
-You can also install from the app: **Skills** panel → **Add External Skills** → enter `addyosmani/agent-skills` → **Install**.
 
 ## Install for one project
 
