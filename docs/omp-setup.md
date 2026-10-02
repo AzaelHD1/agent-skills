@@ -26,6 +26,8 @@ Describe the task and let OMP pick the skill. OMP lists each skill's `name` and 
 
 OMP already routes skills natively. Do not also paste `using-agent-skills/SKILL.md` into `AGENTS.md`, `APPEND_SYSTEM.md`, a rule, or an extension that adds it to every run. That stacks the pack's meta-router on OMP's own router; see [Getting Started](getting-started.md).
 
+The same install also loads the slash commands and the personas in `agents/`. OMP namespaces plugin commands, so run `/agent-skills:spec`, `/agent-skills:ship`, and so on; a bare `/spec` is not expanded. The personas (`code-reviewer`, `security-auditor`, `test-engineer`, `web-performance-auditor`) are listed as `task` agents, which `/agent-skills:ship` and `/agent-skills:webperf` dispatch.
+
 ## Tool mapping
 
 Skills and docs in this pack use Claude Code tool names. In OMP, use the native equivalents:
