@@ -1,6 +1,6 @@
 # ⛩️ Using agent-skills with Dojo Workspace
 
-Dojo Workspace is a desktop app that reads skills from the standard `.agents/skills/` folders. Installing it also puts the `dojo` command on your PATH. If you'd rather add skills through the app's UI, [here is how](https://heydojo.ai/learn/dojo-skills-teach-your-agent-new-workflows).
+Dojo Workspace is a desktop app that reads skills from the standard `.agents/skills/` folders. Installing it also puts the `dojo` command on your PATH.
 
 If `dojo` is not found, add its install folder to your PATH, or run it by its full path:
 
@@ -41,3 +41,5 @@ dojo skills remove addyosmani/agent-skills
 ## How skills load
 
 Only each skill's name and description are listed for the model. The full `SKILL.md` loads on demand when a task matches, so enabling many skills stays cheap. Dojo also reads project instructions from `AGENTS.md`.
+
+If you'd rather add skills through the app's UI, [here is how](https://heydojo.ai/learn/dojo-skills-teach-your-agent-new-workflows).
