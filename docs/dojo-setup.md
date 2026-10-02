@@ -1,21 +1,35 @@
 # Using agent-skills with Dojo Workspace
 
-Dojo Workspace is a desktop app, not a command-line tool. Everything below is done in the app's UI; no terminal needed.
+[Dojo Workspace](https://heydojo.ai) reads skills from the standard `.agents/skills/` folders. Installing the desktop app also puts the `dojo` command on your PATH.
 
 ## Install for all projects
 
-1. Open the **Skills** panel and click **Add External Skills**.
-2. Enter `addyosmani/agent-skills` (or the full GitHub URL) and click **Install**.
+```bash
+dojo skills add addyosmani/agent-skills
+```
 
-![Add External Skills in Dojo Workspace](images/dojo/dojo-step1-install.jpg)
+Skills install into `~/.agents/skills/` and appear in the **Skills** panel under the `addyosmani-agent-skills` group. Enable the ones you want for each lane (Dojo Solo or Dojo Duo).
 
-The skills appear in the panel under the `agent-skills` bucket. Tick the checkmark next to each skill you want to enable for that lane (Dojo Solo or Dojo Duo). Search `agent-skills` to list them all.
+You can also install from the app: **Skills** panel → **Add External Skills** → enter `addyosmani/agent-skills` → **Install**.
 
-![agent-skills in the Dojo Workspace Skills panel](images/dojo/dojo-step2-search.jpg)
+## Install for one project
 
-## Use in a single project
+Run from the project root:
 
-Place any skill folder (the folder containing its `SKILL.md`) in your project's `.agents/skills/` directory. Dojo lists those skills automatically for that project only, marked **Always on** in the Skills panel.
+```bash
+dojo skills add -p addyosmani/agent-skills
+```
+
+Skills install into the project's `.agents/skills/` and are enabled for that project. Commit `skills-lock.json` to share them with your team.
+
+## Manage
+
+```bash
+dojo skills list                      # add -p for the current project
+dojo skills remove addyosmani/agent-skills
+```
+
+`remove` takes a whole repo or a single skill name.
 
 ## How skills load
 
