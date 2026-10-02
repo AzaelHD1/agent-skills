@@ -190,7 +190,7 @@ The first command registers the marketplace; the second installs the plugin. Cod
 <details>
 <summary><b>Dojo Workspace</b></summary>
 
-Installing [Dojo Workspace](https://heydojo.ai) puts the `dojo` command on your PATH:
+Installing Dojo Workspace puts the `dojo` command on your PATH:
 
 ```bash
 dojo skills add addyosmani/agent-skills
