@@ -2,6 +2,15 @@
 
 [Dojo Workspace](https://heydojo.ai) reads skills from the standard `.agents/skills/` folders. Installing the desktop app also puts the `dojo` command on your PATH.
 
+If `dojo` is not found, add its install folder to your PATH, or run it by its full path:
+
+| OS | Folder to add to PATH | Full path |
+| --- | --- | --- |
+| macOS / Linux | `~/.local/bin` | `~/.local/bin/dojo` |
+| Windows | `%LOCALAPPDATA%\dojo\bin` | `%LOCALAPPDATA%\dojo\bin\dojo.exe` |
+
+Open a new terminal after the first app launch so the PATH change is picked up.
+
 ## Install for all projects
 
 ```bash
