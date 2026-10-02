@@ -100,13 +100,14 @@ claude --plugin-dir /path/to/agent-skills
 <details>
 <summary><b>Oh My Pi (OMP)</b></summary>
 
-Install the native extension and shared skills:
+OMP installs this repository's Claude Code marketplace plugin:
 
 ```bash
-omp plugin install github:addyosmani/agent-skills
+omp plugin marketplace add addyosmani/agent-skills
+omp plugin install agent-skills@addy-agent-skills
 ```
 
-Restart OMP after installation. The extension loads the canonical discovery workflow for each new user run; invoke individual skills with `/skill:<name>`. See [docs/omp-setup.md](docs/omp-setup.md) for local installs, lifecycle behavior, and verification.
+Restart OMP after installation; skills are discovered from their descriptions. See [docs/omp-setup.md](docs/omp-setup.md) for local clones and the OMP tool mapping.
 
 </details>
 
