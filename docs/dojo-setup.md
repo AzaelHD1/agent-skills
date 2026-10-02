@@ -1,4 +1,4 @@
-# Using agent-skills with Dojo Workspace
+# ⛩️ Using agent-skills with Dojo Workspace
 
 [Dojo Workspace](https://heydojo.ai) reads skills from the standard `.agents/skills/` folders. Installing the desktop app also puts the `dojo` command on your PATH.
 
