@@ -98,20 +98,6 @@ claude --plugin-dir /path/to/agent-skills
 </details>
 
 <details>
-<summary><b>Oh My Pi (OMP)</b></summary>
-
-OMP installs this repository's Claude Code marketplace plugin:
-
-```bash
-omp plugin marketplace add addyosmani/agent-skills
-omp plugin install agent-skills@addy-agent-skills
-```
-
-Restart OMP after installation; skills are discovered from their descriptions. See [docs/omp-setup.md](docs/omp-setup.md) for local clones and the OMP tool mapping.
-
-</details>
-
-<details>
 <summary><b>Cursor</b></summary>
 
 Put workflow skills under `.cursor/skills/` (sync from `agent-skills/skills/`) and short policies in `.cursor/rules/*.mdc` — do not paste full skills into rules. See [docs/cursor-setup.md](docs/cursor-setup.md).
