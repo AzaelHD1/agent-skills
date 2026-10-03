@@ -202,6 +202,21 @@ The first command registers the marketplace; the second installs the plugin. Cod
 </details>
 
 <details>
+<summary><b>Dojo Workspace</b></summary>
+
+Installing Dojo Workspace puts the `dojo` command on your PATH:
+
+```bash
+dojo skills add addyosmani/agent-skills
+```
+
+If `dojo` is not on your PATH, add its install folder: `~/.local/bin` on macOS/Linux (`~/.local/bin/dojo`) or `%LOCALAPPDATA%\dojo\bin` on Windows (`dojo.exe`). Or run the binary by its full path.
+
+Skills install into `~/.agents/skills/`; enable the ones you want for each lane (Dojo Solo / Dojo Duo). Add `-p` to install into the current project's `.agents/skills/` instead. You can also install from the app's **Skills** panel → **Add External Skills**. See [docs/dojo-setup.md](docs/dojo-setup.md).
+
+</details>
+
+<details>
 <summary><b>Command Code</b></summary>
 
 Install natively with the built-in `cmd skills` command. Command Code clones the repo, discovers every `SKILL.md`, and installs into `.commandcode/skills/`:
